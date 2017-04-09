@@ -17,6 +17,7 @@
 		B1CAF12A1E8B99BB00AC1BE2 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CAF1281E8B99BB00AC1BE2 /* 2.png */; };
 		B1CAF12C1E8B9A6100AC1BE2 /* qr.png in Resources */ = {isa = PBXBuildFile; fileRef = B1CAF12B1E8B9A6100AC1BE2 /* qr.png */; };
 		B1CAF12E1E8BA94000AC1BE2 /* frmregis.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1CAF12D1E8BA94000AC1BE2 /* frmregis.swift */; };
+		E1F98E961E8FA7D500DADDCC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F98E951E8FA7D500DADDCC /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		B1CAF1281E8B99BB00AC1BE2 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		B1CAF12B1E8B9A6100AC1BE2 /* qr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = qr.png; sourceTree = "<group>"; };
 		B1CAF12D1E8BA94000AC1BE2 /* frmregis.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = frmregis.swift; path = ../frmregis.swift; sourceTree = "<group>"; };
+		E1F98E951E8FA7D500DADDCC /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +66,10 @@
 		B1CAF1101E8B8FBD00AC1BE2 /* appmember */ = {
 			isa = PBXGroup;
 			children = (
+				E1F98E941E8FA61B00DADDCC /* img */,
 				B1CAF12D1E8BA94000AC1BE2 /* frmregis.swift */,
-				B1CAF12B1E8B9A6100AC1BE2 /* qr.png */,
-				B1CAF1271E8B99BB00AC1BE2 /* 1.jpg */,
-				B1CAF1281E8B99BB00AC1BE2 /* 2.png */,
 				B1CAF1111E8B8FBD00AC1BE2 /* AppDelegate.swift */,
+				E1F98E951E8FA7D500DADDCC /* TableViewCell.swift */,
 				B1CAF1131E8B8FBD00AC1BE2 /* FirstViewController.swift */,
 				B1CAF1151E8B8FBD00AC1BE2 /* SecondViewController.swift */,
 				B1CAF1171E8B8FBD00AC1BE2 /* Main.storyboard */,
@@ -77,6 +78,16 @@
 				B1CAF11F1E8B8FBD00AC1BE2 /* Info.plist */,
 			);
 			path = appmember;
+			sourceTree = "<group>";
+		};
+		E1F98E941E8FA61B00DADDCC /* img */ = {
+			isa = PBXGroup;
+			children = (
+				B1CAF12B1E8B9A6100AC1BE2 /* qr.png */,
+				B1CAF1271E8B99BB00AC1BE2 /* 1.jpg */,
+				B1CAF1281E8B99BB00AC1BE2 /* 2.png */,
+			);
+			name = img;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1F98E961E8FA7D500DADDCC /* TableViewCell.swift in Sources */,
 				B1CAF12E1E8BA94000AC1BE2 /* frmregis.swift in Sources */,
 				B1CAF1161E8B8FBD00AC1BE2 /* SecondViewController.swift in Sources */,
 				B1CAF1121E8B8FBD00AC1BE2 /* AppDelegate.swift in Sources */,
@@ -325,6 +337,7 @@
 				B1CAF1241E8B8FBD00AC1BE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
