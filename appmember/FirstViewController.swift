@@ -49,26 +49,15 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         let row  = self.data[indexPath.row]
         
-        //   let  r:NSMutableDictionary = self.data[indexPath.row] as! NSMutableDictionary
-        
-        
-        var url = URL(string:  row["defimg"] as! String)
+        var url = URL(string:  row["img"] as! String)
         if url == nil {
+            //show img not found
             url = URL(string: "https://learn.getgrav.org/user/pages/11.troubleshooting/01.page-not-found/error-404.png")
         }
         var data = try? Data(contentsOf: url!)
         
-        
         c.imgPromotion.image = UIImage(data: data!)
-        
-        //url = URL(string:  row["uimg"] as! String)
-        //data = try? Data(contentsOf: url!)
-        //c.uimg.image = UIImage(data: data!)
-        
-        
-        
-        c.txtPromotion.text = row["fname"] as! String
-        
+        c.txtPromotion.text = row["txt"] as! String
         
         // Configure the cell...
         
@@ -88,7 +77,8 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3, execute: {
             
-            self.data = self.getjson("http://223.27.210.251/getpromotion.php")
+            //self.data = self.getjson("http://223.27.210.251/getpro2.php")
+            self.data = self.getjson("http://client1.dev/getpromotion.php")
             
             self.tableview.reloadData()
             
